@@ -122,7 +122,7 @@ describe("gameplay works correctly", () => {
     test("should call an alert if the move is wrong", () => {
         game.playerMoves.push("wrong");
         playerTurn();
-        expect(window.alert).toBeCalledWith("Wrong move!");
+        expect(window.alert).toHaveBeenCalledWith("Wrong move!");
     });
     test("should toggle turnInProgress to true", () => {
         showTurns();
